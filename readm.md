@@ -1,10 +1,14 @@
- International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
- Volume: 06 Issue: 02 | Feb 2019 www.irjet.net p-ISSN: 2395-0072
+https://www.irjet.net/archives/V6/i2/IRJET-V6I230.pdf
+
+International Research Journal of Engineering and Technology (IRJET) e-ISSN: 2395-0056
+Volume: 06 Issue: 02 | Feb 2019 www.irjet.net p-ISSN: 2395-0072
 © 2019, IRJET | Impact Factor value: 7.211 | ISO 9001:2008 Certified Journal | Page 132
 A Desktop SCARA Robot using Stepper Motors
 Pranav Shevkar1, Sayali Bankar2, Akash Vanjare3, Pranita Shinde4, Vaibhav Redekar5,
 Shubham Chidrewar6
+
 ----------------------------------------------------------------------
+
 Abstract – The paper describes the development and testing of 3 degree of freedom (DOF) desktop SCARA that is capable of picking and placing objects with high speed and precision. Using Autodesk inventor, the initial modelling of SCARA robot is created.
 The rotational inertias of the two links are calculated from the software and using parallel axis theorem.
 Using the considered values of peak speed and acceleration, torques of stepper motors are calculated.
