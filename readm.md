@@ -5,35 +5,37 @@ A Desktop SCARA Robot using Stepper Motors
 Pranav Shevkar1, Sayali Bankar2, Akash Vanjare3, Pranita Shinde4, Vaibhav Redekar5,
 Shubham Chidrewar6
 ----------------------------------------------------------------------***---------------------------------------------------------------------
-Abstract – The paper describes the development and testing of 3 degree of freedom (DOF) desktop SCARA that is capable of picking and placing objects with high speed and precision. Using Autodesk inventor, the initial modelling of SCARA robot is created. The rotational inertias of the two links are calculated from the software and using parallel axis theorem. Using the considered values of peak speed and acceleration, torques of stepper motors are calculated. The inverse kinematics calculations are carried out in MATLAB software since the processing power of microcontroller is limited. MATLAB is so programmed to convert the angles
-into number of steps and sent to the microcontroller by serial communication. To enable the robotic arm to operate
-at high speed the inter-step delays for stepper motors are calculated using Taylor's series to provide constant
-acceleration and deceleration. A graphical user interface is designed using MATLAB. Finally, the electronic circuitry and
-mechanical parts are assembled, and the robot is tested for repeatability.
+Abstract – The paper describes the development and testing of 3 degree of freedom (DOF) desktop SCARA that is capable of picking and placing objects with high speed and precision. Using Autodesk inventor, the initial modelling of SCARA robot is created.
+The rotational inertias of the two links are calculated from the software and using parallel axis theorem.
+Using the considered values of peak speed and acceleration, torques of stepper motors are calculated.
+The inverse kinematics calculations are carried out in MATLAB software since the processing power of microcontroller is limited. 
+MATLAB is so programmed to convert the angles into number of steps and sent to the microcontroller by serial communication.
+To enable the robotic arm to operate at high speed the inter-step delays for stepper motors are calculated using Taylor's series to provide constant acceleration and deceleration.
+A graphical user interface is designed using MATLAB. Finally, the electronic circuitry and mechanical parts are assembled, and the robot is tested for repeatability.
 Key Words: SCARA, 3-DOF manipulator, Pick-n-place, MATLAB, Inverse kinematics, Stepper motor.
 
 1. INTRODUCTION
-The use of robots in industries is proliferating due to the necessity of automation, reducing worker fatigue and
-faster productivity. Robots applications in industries is primarily in four fields viz. material handling, operations,
-assembly and inspection. Apart from industries, robots are also deployed in home sector, health care, service sector,
-agriculture and farms, research and exploration. The applications of robots are only limited by the need and
-imagination of the developer and the end user. Robots have a potential to change our economy, health, living
-style, and the world we live in [1].
-The SCARA acronym stands for Selective Compliance Articulated Robot Arm. It is selective compliant since the
-arm is fully compliant in the horizontal plane while it is rigid in the vertical axis. Also, the two-link arm layout
-imitates the human arm thus making it articulated. One joint acts as a shoulder joint and the second as an elbow
-joint [2]. SCARA robots are the first choice of industries due to high speed and accuracy. These robots are used
-generally for assembly, pick and place, sorting, soldering and painting. This work presents the design and
-fabrication of desktop robotic arm that can do its programmed movements with speed, accuracy and
-precision.
-The focus is to bring robots for day to day applications for household and educational use. This SCARA robot is ideal
-for applications involving the manipulator to travel fixed coordinates. The robotic arm can be operated in manual as
-well as auto mode. The user can enter the sequence of operations into the HMI along with the desired speed and
-dwell time. The MATLAB program calculates the angles and instructs the stepper motor to attain the required
-coordinates. The vacuum pump and vacuum cup enable the robot to be used for pick and place operations. It is
-necessary to do referencing of the robot every time it is started [3]. The focus is to attain accuracy at high speed
-keeping the cost as low as possible. The methodology followed for development of the proposed SCARA robot is
-shown in fig – 1.
+The use of robots in industries is proliferating due to the necessity of automation, reducing worker fatigue and faster productivity.
+Robots applications in industries is primarily in four fields viz. material handling, operations, assembly and inspection.
+Apart from industries, robots are also deployed in home sector, health care, service sector, agriculture and farms, research and exploration.
+The applications of robots are only limited by the need and imagination of the developer and the end user.
+Robots have a potential to change our economy, health, living style, and the world we live in [1].
+The SCARA acronym stands for Selective Compliance Articulated Robot Arm.
+It is selective compliant since the arm is fully compliant in the horizontal plane while it is rigid in the vertical axis.
+Also, the two-link arm layout imitates the human arm thus making it articulated.
+One joint acts as a shoulder joint and the second as an elbow joint [2].
+SCARA robots are the first choice of industries due to high speed and accuracy.
+These robots are used generally for assembly, pick and place, sorting, soldering and painting.
+This work presents the design and fabrication of desktop robotic arm that can do its programmed movements with speed, accuracy and precision.
+The focus is to bring robots for day to day applications for household and educational use.
+This SCARA robot is ideal for applications involving the manipulator to travel fixed coordinates.
+The robotic arm can be operated in manual as well as auto mode.
+The user can enter the sequence of operations into the HMI along with the desired speed and dwell time.
+The MATLAB program calculates the angles and instructs the stepper motor to attain the required coordinates.
+The vacuum pump and vacuum cup enable the robot to be used for pick and place operations.
+It is necessary to do referencing of the robot every time it is started [3].
+The focus is to attain accuracy at high speed keeping the cost as low as possible.
+The methodology followed for development of the proposed SCARA robot is shown in fig – 1.
 Fig – 1: Methodology
 
 2. REQUIRED SPECIFICATIONS
