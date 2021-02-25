@@ -4,7 +4,7 @@
 A Desktop SCARA Robot using Stepper Motors
 Pranav Shevkar1, Sayali Bankar2, Akash Vanjare3, Pranita Shinde4, Vaibhav Redekar5,
 Shubham Chidrewar6
-----------------------------------------------------------------------***---------------------------------------------------------------------
+----------------------------------------------------------------------
 Abstract – The paper describes the development and testing of 3 degree of freedom (DOF) desktop SCARA that is capable of picking and placing objects with high speed and precision. Using Autodesk inventor, the initial modelling of SCARA robot is created.
 The rotational inertias of the two links are calculated from the software and using parallel axis theorem.
 Using the considered values of peak speed and acceleration, torques of stepper motors are calculated.
